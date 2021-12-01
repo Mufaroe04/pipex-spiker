@@ -1,0 +1,71 @@
+<html>
+    
+    <head>
+        <title>Overall rating</title>
+        <style>
+            body{
+                background-color: white;
+                
+
+            }
+            form{
+                margin-left: 150px;
+                margin-top:15px;
+                margin-bottom:15px;
+                width:360;
+                box-shadow: 15px;
+
+
+            }
+            div{
+                margin: 50px;
+                background-color: red;
+
+            }
+            label{
+                font-size: 20px;
+                font-style: italic;
+                margin: 15px;
+                width: 100px;
+                height: 30px;
+
+            }
+            p{
+                color: red;
+            }
+            h1,h4{color:blue;
+            margin-left: 150px;
+                margin-top:15px;
+                margin-bottom:15px;}
+        </style>
+    </head>
+    <h1>Player Overal Rating  Predictor</h1>
+    <body>
+    <h4> Enter player's properties</h4>
+    <br>
+    
+        <form action="/sub" method="POST">
+          <label for="">pace</label><br>
+          <input type="number" name = "pace" placeholder="pace">
+          <br><br><label for="">shooting</label> <br>
+          <input type="number" name = "shooting" placeholder="shooting">
+          <br><br><label for="">passing</label><br>
+          <input type="number" name = "passing" placeholder="passing">
+          <br><br><label for="">dribbling</label><br>
+          <input type="number" name = "dribbling" placeholder="dribbling">
+          <br><br><label for="">defending</label><br>
+          <input type="number" name = "defending" placeholder="defending">
+          <br><br><label for="">physic</label><br>
+          <input type="number" name = "physic" placeholder="physic">
+          <br><br><label for="">international_reputation</label><br>
+          <input type="number" name = "international_reputation" placeholder="international_reputation">
+          <br><br>
+              Predict :<input type="submit">
+        </form>
+          <div >
+<p>Overall:{{text}} </p>
+          </div>
+            
+        
+    </body>
+</html>
